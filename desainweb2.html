@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Dosen</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <img src="d:\lutfia choirun\Kartu Hasil Studi - UNIVERSITAS AMIKOM Yogyakarta_files\logo-amikom.png.png" alt="Universitas Amikom Yogyakarta">
+        </div>
+        <div class="profile">
+            <img src="d:\lutfia choirun\profil.png" alt="Nama Dosen">
+            <h2>Nama Dosen</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Lihat Profil</a></li>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Daftar Kehadiran</a></li>
+                <li><a href="#">Jadwal Mengajar</a></li>
+                <li><a href="#">Tambah Data</a></li>
+                <li><a href="#">Rekapitulasi Nilai</a></li>
+                <li><a href="#">E-mail</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main-content">
+        <header>
+            <h1>Dashboard Dosen</h1>
+            <h2>Tahun Ajaran 2023-2024</h2>
+        </header>
+        <div class="content">
+            <div class="schedule">
+                <h3>Jadwal Mengajar</h3>
+                <table>
+                    <tr>
+                        <th>Hari</th>
+                        <th>Jam</th>
+                        <th>Ruang</th>
+                    </tr>
+                    <tr>
+                        <td>SENIN</td>
+                        <td>10.40-12.20</td>
+                        <td>05.04.08</td>
+                    </tr>
+                    <tr>
+                        <td>SENIN</td>
+                        <td>15.30-17.10</td>
+                        <td>05.02.03</td>
+                    </tr>
+                    <tr>
+                        <td>SELASA</td>
+                        <td>07.00-08.40</td>
+                        <td>07.01.02</td>
+                    </tr>
+                    <tr>
+                        <td>SELASA</td>
+                        <td>10.40-12.20</td>
+                        <td>05.03.07</td>
+                    </tr>
+                    <tr>
+                        <td>RABU</td>
+                        <td>08.50-10.30</td>
+                        <td>07.02.01</td>
+                    </tr>
+                    <tr>
+                        <td>RABU</td>
+                        <td>13.20-15.00</td>
+                        <td>VR.02.04</td>
+                    </tr>
+                    <tr>
+                        <td>KAMIS</td>
+                        <td>13.20-15.00</td>
+                        <td>07.02.03</td>
+                    </tr>
+                    <tr>
+                        <td>KAMIS</td>
+                        <td>15.30-17.10</td>
+                        <td>07.04.02</td>
+                    </tr>
+                    <tr>
+                        <td>JUMAT</td>
+                        <td>08.50-10.30</td>
+                        <td>05.02.06</td>
+                    </tr>
+                    <tr>
+                        <td>JUMAT</td>
+                        <td>13.20-15.00</td>
+                        <td>05.04.09</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="qr-code">
+                <h3>Kode QR</h3>
+                <img src="d:\lutfia choirun\qr.png" alt="QR Code">
+            </div>
+        </div>
+    </div>
+    <div class="logout">
+        <button>LOGOUT</button>
+    </div>
+</body>
+</html>
+<style>
+    body {
+    display: flex;
+    font-family: Arial, sans-serif;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #ffffff;
+    color: rgba(11, 7, 7, 0.476);
+    padding: 20px;
+}
+
+.logo img {
+    width: 20%;
+    height: auto;
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.profile h2 {
+    margin: 10px 0 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 20px 0;
+}
+
+nav ul li a {
+    color: rgba(23, 20, 20, 0.713);
+    text-decoration: none;
+}
+
+.main-content {
+    flex-grow: 1;
+    background-color: #C99A;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.schedule {
+    width: 60%;
+}
+
+.schedule table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.schedule th, .schedule td {
+    border: 2px solid #1d19199f;
+    padding: 8px;
+    text-align: left;
+}
+
+.schedule th {
+    background-color: #65496e;
+    color: white;
+}
+
+.qr-code {
+    width: 30%;
+    text-align: center;
+}
+
+.qr-code img {
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+}
+
+.logout {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.logout button {
+    background-color: #b84a62;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.logout button:hover {
+    background-color: #a03a52;
+}
